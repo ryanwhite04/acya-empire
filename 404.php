@@ -2,36 +2,36 @@
 /**
  * The template for displaying 404 pages
  *
- * @package Theme Freesia
- * @subpackage Freesia Empire
- * @since Freesia Empire 1.0
+ * @package Theme ACYA
+ * @subpackage ACYA Empire
+ * @since ACYA Empire 1.0
  */
 get_header();
-$freesiaempire_settings = freesiaempire_get_theme_options();
-global $freesiaempire_content_layout;
+$acyaempire_settings = acyaempire_get_theme_options();
+global $acyaempire_content_layout;
 if( $post ) {
-	$layout = get_post_meta( $post->ID, 'freesiaempire_sidebarlayout', true );
+	$layout = get_post_meta( $post->ID, 'acyaempire_sidebarlayout', true );
 }
 if( empty( $layout ) || is_archive() || is_search() || is_home() ) {
 	$layout = 'default';
 }
 if( 'default' == $layout ) { //Settings from customizer
-	if(($freesiaempire_settings['freesiaempire_sidebar_layout_options'] != 'nosidebar') && ($freesiaempire_settings['freesiaempire_sidebar_layout_options'] != 'fullwidth')){ ?>
+	if(($acyaempire_settings['acyaempire_sidebar_layout_options'] != 'nosidebar') && ($acyaempire_settings['acyaempire_sidebar_layout_options'] != 'fullwidth')){ ?>
 
 <div id="primary">
 	<?php }
 }?>
 <div class="site-content" role="main">
 	<article id="post-0" class="post error404 not-found">
-		<?php if ( is_active_sidebar( 'freesiaempire_404_page' ) ) :
-			dynamic_sidebar( 'freesiaempire_404_page' );
+		<?php if ( is_active_sidebar( 'acyaempire_404_page' ) ) :
+			dynamic_sidebar( 'acyaempire_404_page' );
 		else:?>
 		<section class="error-404 not-found">
 			<header class="page-header">
-				<h2 class="page-title"> <?php _e( 'Oops! That page can&rsquo;t be found.', 'freesia-empire' ); ?> </h2>
+				<h2 class="page-title"> <?php _e( 'Oops! That page can&rsquo;t be found.', 'acya-empire' ); ?> </h2>
 			</header> <!-- .page-header -->
 			<div class="page-content">
-				<p> <?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'freesia-empire' ); ?> </p>
+				<p> <?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'acya-empire' ); ?> </p>
 					<?php get_search_form(); ?>
 			</div> <!-- .page-content -->
 		</section> <!-- .error-404 -->
@@ -40,7 +40,7 @@ if( 'default' == $layout ) { //Settings from customizer
 </div> <!-- #content .site-content -->
 <?php 
 if( 'default' == $layout ) { //Settings from customizer
-	if(($freesiaempire_settings['freesiaempire_sidebar_layout_options'] != 'nosidebar') && ($freesiaempire_settings['freesiaempire_sidebar_layout_options'] != 'fullwidth')): ?>
+	if(($acyaempire_settings['acyaempire_sidebar_layout_options'] != 'nosidebar') && ($acyaempire_settings['acyaempire_sidebar_layout_options'] != 'fullwidth')): ?>
 </div> <!-- #primary -->
 <?php endif;
 }

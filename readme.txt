@@ -1,7 +1,7 @@
-== Freesia Empire ==
-Freesia Empire is a Responsive Multi-Purpose WordPress Theme, Designed & Developed by Theme Freesia. This theme supports popular plugins like Breadcrumb NavXT, WP-PageNavi, Contact Form 7, Jetpack by WordPress.com, Polylang, WPML Compatible, Newsletter, bbPress and WooCommerce. It is also translation ready and currently translated in French language. It is also easily customizable with lots of theme options using Customizer. It consists contact-template, gallery-template, freesiaempire-corporate template and with lots of widgets and sidebar. Get free support at http://themefreesia.com/support-forum/ and View demo site at http://demo.themefreesia.com/freesia-empire.
+== ACYA Empire ==
+ACYA Empire is a Responsive Multi-Purpose WordPress Theme, Designed & Developed by Theme ACYA. This theme supports popular plugins like Breadcrumb NavXT, WP-PageNavi, Contact Form 7, Jetpack by WordPress.com, Polylang, WPML Compatible, Newsletter, bbPress and WooCommerce. It is also translation ready and currently translated in French language. It is also easily customizable with lots of theme options using Customizer. It consists contact-template, gallery-template, acyaempire-corporate template and with lots of widgets and sidebar. Get free support at http://themeacya.com/support-forum/ and View demo site at http://demo.themeacya.com/acya-empire.
 
-Contributors: ThemeFreesia Team
+Contributors: ThemeACYA Team
 
 License: GNU General Public License version 3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -10,7 +10,7 @@ Tags: threaded-comments, left-sidebar, right-sidebar, custom-background, custom-
 
 All files, unless otherwise stated, are released under the GNU General Public License
 version 3.0 (http://www.gnu.org/licenses/gpl-3.0.html)
-Text Domain: freesia-empire
+Text Domain: acya-empire
 
 =================================================================================
 
@@ -42,7 +42,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 		Screenshot Images:
 		https://pixabay.com/en/smartphone-mobile-notebook-notepad-925287/
 		Licensed: Public Domain Images
-		Screenshot Image is modified by ThemeFreesia which is license under GNU General Public License Version 3 or later and can be used or modify for both commercial and personal use
+		Screenshot Image is modified by ThemeACYA which is license under GNU General Public License Version 3 or later and can be used or modify for both commercial and personal use
 
 	-TGM-Plugin-Activation
 		https://github.com/TGMPA/TGM-Plugin-Activation/blob/develop/LICENSE.md under GNU GPL license
@@ -55,19 +55,19 @@ All the theme files and other un-specified scripts are licensed under GNU Genera
 
 =================================================================================
 
-== Freesia Empire Info ==
+== ACYA Empire Info ==
 
 	- About Theme -
-	http://themefreesia.com/themes/freesia-empire
+	http://themeacya.com/themes/acya-empire
 
 	- Theme Demo -
-	http://demo.themefreesia.com/freesia-empire
+	http://demo.themeacya.com/acya-empire
 
 	- Theme Instruction -
-	http://themefreesia.com/theme-instruction/freesia-empire
+	http://themeacya.com/theme-instruction/acya-empire
 
 	- Free Support -
-	http://themefreesia.com/support-forum
+	http://themeacya.com/support-forum
 
 =================================================================================
 == Menus ==
@@ -76,20 +76,20 @@ There are 2 Menus registered in this theme. Main Menu and Social Icon Menu
 == Installation ==
 1. Primary: Login to your wp-admin area and go to Dashboard -> Appearance -> Themes. Select Install tab and click on Upload link. Select theme .zip and click on Install now button. If you have any errors, use can also use an alternate method.
 
-2. Alternate: Unzip the template file (freesia-empire.zip) that you have downloaded. Via FTP, upload the whole folder (freesia-empire) to your server and place it inside the http://yourdomain.com/wp-content/themes/folder(freesia-empire). Do not change directory name. The template files should thus be here now: http://yourdomain.com/wp-content/themes/freesia-empire/index.php (for example).
+2. Alternate: Unzip the template file (acya-empire.zip) that you have downloaded. Via FTP, upload the whole folder (acya-empire) to your server and place it inside the http://yourdomain.com/wp-content/themes/folder(acya-empire). Do not change directory name. The template files should thus be here now: http://yourdomain.com/wp-content/themes/acya-empire/index.php (for example).
 
-3. Log into your WP admin panel and click on the Appearance -> Theme tab. Now click on the Freesia Empire theme to activate it.
+3. Log into your WP admin panel and click on the Appearance -> Theme tab. Now click on the ACYA Empire theme to activate it.
 
-4. Want to enjoy Freesia Empire feature. Go to  Dashboard -> Appearance -> Customize and play with Freesia Empire Options
+4. Want to enjoy ACYA Empire feature. Go to  Dashboard -> Appearance -> Customize and play with ACYA Empire Options
 
 5. The theme is offered free of charge. If someone asked money for it, someone just tricked you.
 
 == Translation ==
 
-Freesia Empire theme is translation ready
+ACYA Empire theme is translation ready
 Added French Translation by Alexandre BRONNER ( Email: alexbfr@gmail.com )
 
-If you have language translation file then feel free to submit your translation at themefreesia@gmail.com. We will add your translation file on upcomming version.
+If you have language translation file then feel free to submit your translation at themeacya@gmail.com. We will add your translation file on upcomming version.
 
 =================================================================================
 
@@ -101,4 +101,4 @@ Please refer to changelog.txt file
 
 = Theme Instructions =
 
-For detail instructions visit http://themefreesia.com/theme-instruction/freesia-empire/
+For detail instructions visit http://themeacya.com/theme-instruction/acya-empire/

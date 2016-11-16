@@ -1,5 +1,5 @@
-/************************* freesiaempire CUSTOMIZER CUSTOM CSS **************************************/
-.wp-core-ui .btn-upgrade, #about_freesiaempire {
+/************************* acyaempire CUSTOMIZER CUSTOM CSS **************************************/
+.wp-core-ui .btn-upgrade, #about_acyaempire {
 	background-color: #6897e5;
 	border: 1px solid #6897e5;
 	box-shadow: none;
@@ -12,19 +12,19 @@
 		-o-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
 }
-.wp-core-ui .btn-upgrade:hover, #about_freesiaempire:hover,
-.wp-core-ui .btn-upgrade:focus, #about_freesiaempire:focus  {
+.wp-core-ui .btn-upgrade:hover, #about_acyaempire:hover,
+.wp-core-ui .btn-upgrade:focus, #about_acyaempire:focus  {
 	background-color: #bbb;
 	border: 1px solid #bbb;
 	box-shadow: none;
 	color: #fff;
 }
-#freesiaempire_upgrade{
+#acyaempire_upgrade{
 	display: block;
 	float: left;
 	width: 100%;
 }
-#about_freesiaempire{
+#about_acyaempire{
 	display: block;
 	padding: 10px 0px 10px 0;
 	text-align: center;

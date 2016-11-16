@@ -1,16 +1,16 @@
 <?php
 /**
  *
- * @package Theme Freesia
- * @subpackage Freesia Empire
- * @since Freesia Empire 1.0
+ * @package Theme ACYA
+ * @subpackage ACYA Empire
+ * @since ACYA Empire 1.0
  */
 /****************** FREESIAEMPIRE POST WIDGETS **************************************/
-  class freesiaempire_post_widget extends WP_Widget {
+  class acyaempire_post_widget extends WP_Widget {
 	function __construct() {
-		$widget_ops  = array('classname' => 'widget_latest_blog', 'description' => __('Displays Blog Widgets on FrontPage', 'freesia-empire'));
+		$widget_ops  = array('classname' => 'widget_latest_blog', 'description' => __('Displays Blog Widgets on FrontPage', 'acya-empire'));
 		$control_ops = array('width'     => 200, 'height'     => 250);
-		parent::__construct(false, $name = __('TF: FP Blog Widget', 'freesia-empire'), $widget_ops, $control_ops);
+		parent::__construct(false, $name = __('TF: FP Blog Widget', 'acya-empire'), $widget_ops, $control_ops);
 	}
 	function form($instance) {
 		$instance = wp_parse_args(( array ) $instance, array('title' => '','description' => '','number' => '4','post_type'=> 'latest','category' => '', 'checkbox' => ''));
@@ -23,32 +23,32 @@
 		?>
 				<p>
 			<input id="<?php echo $this->get_field_id('checkbox'); ?>" name="<?php echo $this->get_field_name('checkbox'); ?>" type="checkbox" value="1" <?php checked( '1', $checkbox ); ?>/>
-			<label for="<?php echo $this->get_field_id('checkbox'); ?>"><?php _e('Check to hide entry format','freesia-empire'); ?></label>
+			<label for="<?php echo $this->get_field_id('checkbox'); ?>"><?php _e('Check to hide entry format','acya-empire'); ?></label>
 		</p>
 				<p>
 				<label for="<?php echo $this->get_field_id('title');?>">
-		<?php _e('Title:', 'freesia-empire');?>
+		<?php _e('Title:', 'acya-empire');?>
 				</label>
 				<input id="<?php echo $this->get_field_id('title');?>" name="<?php echo $this->get_field_name('title');?>" type="text" value="<?php echo $title;?>" />
 				</p>
 				<p>
 			<label for="<?php echo $this->get_field_id('description');?>">
-				<?php _e('Description:', 'freesia-empire');?>
+				<?php _e('Description:', 'acya-empire');?>
 			</label>
 			<textarea class="widefat" rows="8" cols="20" id="<?php echo $this->get_field_id('description');?>" name="<?php echo $this->get_field_name('description');?>"><?php echo stripslashes( wp_filter_post_kses( addslashes ($description)));
 	?></textarea></p>
 				<p>
 				<label for="<?php echo $this->get_field_id('number'); ?>">
-				<?php _e( 'Number of Post:', 'freesia-empire' ); ?>
+				<?php _e( 'Number of Post:', 'acya-empire' ); ?>
 				</label>
 				<input id="<?php echo $this->get_field_id('number'); ?>" name="<?php echo $this->get_field_name('number'); ?>" type="text" value="<?php echo $number; ?>" size="3" />
 				</p>
 				<p><input type="radio" <?php checked($post_type, 'latest') ?> id="<?php echo $this->get_field_id( 'post_type' ); ?>" name="<?php echo $this->get_field_name( 'post_type' ); ?>"
-				 value="latest"/><?php _e( 'Show latest Posts', 'freesia-empire' );?><br />  
-		 <input type="radio" <?php checked($post_type,'category') ?> id="<?php echo $this->get_field_id( 'post_type' ); ?>" name="<?php echo $this->get_field_name( 'post_type' ); ?>" value="category"/><?php _e( 'Show posts from a category', 'freesia-empire' );?><br /></p>
+				 value="latest"/><?php _e( 'Show latest Posts', 'acya-empire' );?><br />  
+		 <input type="radio" <?php checked($post_type,'category') ?> id="<?php echo $this->get_field_id( 'post_type' ); ?>" name="<?php echo $this->get_field_name( 'post_type' ); ?>" value="category"/><?php _e( 'Show posts from a category', 'acya-empire' );?><br /></p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'category' ); ?>"><?php _e( 'Select category', 'freesia-empire' ); ?>:</label>
+			<label for="<?php echo $this->get_field_id( 'category' ); ?>"><?php _e( 'Select category', 'acya-empire' ); ?>:</label>
 			<?php wp_dropdown_categories( array( 'show_option_none' =>' ','name' => $this->get_field_name( 'category' ), 'selected' => $category ) ); ?>
 		</p>
 		<?php
@@ -65,7 +65,7 @@
 		return $instance;
 	}
 	function widget($args, $instance) {
-		global $freesiaempire_settings;
+		global $acyaempire_settings;
 		extract($args);
 		extract($instance);
 		$checkbox    = esc_attr('checkbox', empty($instance['checkbox'])?'':$instance['checkbox'], $instance);
@@ -94,8 +94,8 @@
 				<div class="container clearfix">
 				<?php
 				if ( !empty( $title ) || !empty( $description ) ) {
-				echo '<h2 class="widget-title freesia-animation fadeInDown" data-wow-delay="1s">' . esc_html( $title ) . '</h2>'; ?>
-				<p class="latest-blog-sub-title freesia-animation fadeInDown" data-wow-delay="1s"><?php echo esc_textarea( $description ); ?></p>
+				echo '<h2 class="widget-title acya-animation fadeInDown" data-wow-delay="1s">' . esc_html( $title ) . '</h2>'; ?>
+				<p class="latest-blog-sub-title acya-animation fadeInDown" data-wow-delay="1s"><?php echo esc_textarea( $description ); ?></p>
 				<?php } ?>
 					<div class="column clearfix">
 			<?php
@@ -109,7 +109,7 @@
 							<?php
 							}
 								if( has_post_thumbnail() ) { ?>
-								<div class="blog-img freesia-animation fadeInDown" data-wow-delay="0.3s">
+								<div class="blog-img acya-animation fadeInDown" data-wow-delay="0.3s">
 								<?php the_post_thumbnail(); ?>
 									<div class="blog-overlay">
 										<a href="<?php the_permalink(); ?>">
@@ -118,7 +118,7 @@
 									</div><!-- end.blog-overlay -->
 								</div><!-- end.blog-img -->
 								<?php } ?>
-								<div class="blog-content freesia-animation fadeInUp" data-wow-delay="0.3s">
+								<div class="blog-content acya-animation fadeInUp" data-wow-delay="0.3s">
 									<header class="entry-header">
 											<h3 class="entry-title"><a rel="bookmark" href="<?php the_permalink();?>"><?php the_title(); ?> </a></h3>
 									<?php if ( $checkbox != '' ) { ?>
@@ -136,16 +136,16 @@
 									<?php } ?>
 									</header><!-- end.entry-header -->
 									<div class="entry-content"><p><?php echo substr(get_the_excerpt(), 0 , 120); ?> </p>
-									<?php $freesiaempire_tag_text = $freesiaempire_settings['freesiaempire_tag_text'];
+									<?php $acyaempire_tag_text = $acyaempire_settings['acyaempire_tag_text'];
 									$excerpt = get_the_excerpt();
 									$content = get_the_content();
 									if(strlen($excerpt) < strlen($content)){ ?>
 										<a class="more-link" title="<?php the_title_attribute();?>" href="<?php the_permalink();?>">
 											<?php
-											if($freesiaempire_tag_text == 'Read More' || $freesiaempire_tag_text == ''):
-												_e('Read More', 'freesia-empire');
+											if($acyaempire_tag_text == 'Read More' || $acyaempire_tag_text == ''):
+												_e('Read More', 'acya-empire');
 											else:
-												echo esc_attr($freesiaempire_tag_text);
+												echo esc_attr($acyaempire_tag_text);
 											endif;?>
 										</a>
 									<?php } ?>

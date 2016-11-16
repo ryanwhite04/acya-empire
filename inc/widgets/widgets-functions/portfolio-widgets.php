@@ -1,10 +1,10 @@
 <?php
 /***************************** Portfolio Widget ***********************************/
-class freesiaempire_portfolio_widget extends WP_Widget {
+class acyaempire_portfolio_widget extends WP_Widget {
 	function __construct() {
-		$widget_ops  = array('classname' => 'widget_portfolio clearfix', 'description' => __('Portfolio Widget (Front Page)', 'freesia-empire'));
+		$widget_ops  = array('classname' => 'widget_portfolio clearfix', 'description' => __('Portfolio Widget (Front Page)', 'acya-empire'));
 		$control_ops = array('width'     => 200, 'height'     => 250);
-		parent::__construct(false, $name = __('TF: FP Portfolio Widget', 'freesia-empire'), $widget_ops, $control_ops);
+		parent::__construct(false, $name = __('TF: FP Portfolio Widget', 'acya-empire'), $widget_ops, $control_ops);
 	}
 	function form($instance) {
 		$instance           = wp_parse_args((array) $instance, array('number' => '6', 'title' => '', 'text' => '', 'button_text' =>'', 'button_url'=>'', 'page_id0'=>'','page_id1'=>'','page_id2'=>'','page_id3'=>'','page_id4'=>'','page_id5'=>'','page_id6'=>'','page_id7'=>''));
@@ -24,27 +24,27 @@ class freesiaempire_portfolio_widget extends WP_Widget {
 		} ?>
 <p>
   <label for="<?php echo $this->get_field_id('number'); ?>">
-  <?php _e( 'Number of Works:', 'freesia-empire' ); ?>
+  <?php _e( 'Number of Works:', 'acya-empire' ); ?>
   </label>
   <input id="<?php echo $this->get_field_id('number'); ?>" name="<?php echo $this->get_field_name('number'); ?>" type="text" value="<?php echo $number; ?>" size="3" />
 </p>
 <p>
   <label for="<?php echo $this->get_field_id('title');?>">
-  <?php _e('Title:', 'freesia-empire');?>
+  <?php _e('Title:', 'acya-empire');?>
   </label>
   <input id="<?php echo $this->get_field_id('title');?>" name="<?php echo $this->get_field_name('title');?>" type="text" value="<?php echo esc_attr($title);?>" />
 </p>
-<?php _e('Description', 'freesia-empire');?>
+<?php _e('Description', 'acya-empire');?>
 <textarea class="widefat" rows="10" cols="20" id="<?php echo $this->get_field_id('text');?>" name="<?php echo $this->get_field_name('text');?>"><?php echo esc_attr($text); ?></textarea>
 <p>
   <label for="<?php echo $this->get_field_id('button_text');?>">
-  <?php _e('Button Text:', 'freesia-empire');?>
+  <?php _e('Button Text:', 'acya-empire');?>
   </label>
   <input id="<?php echo $this->get_field_id('button_text');?>" name="<?php echo $this->get_field_name('button_text');?>" type="text" value="<?php echo esc_attr($button_text);?>" />
 </p>
 <p>
   <label for="<?php echo $this->get_field_id('button_url');?>">
-  <?php _e('Button Url:', 'freesia-empire');?>
+  <?php _e('Button Url:', 'acya-empire');?>
   </label>
   <input id="<?php echo $this->get_field_id('button_url');?>" name="<?php echo $this->get_field_name('button_url');?>" type="text" value="<?php echo esc_url($button_url);?>" />
 </p>
@@ -53,7 +53,7 @@ class freesiaempire_portfolio_widget extends WP_Widget {
 			?>
 <p>
   <label for="<?php echo $this->get_field_id(key($defaults));?>">
-  <?php _e('Page', 'freesia-empire');?>
+  <?php _e('Page', 'acya-empire');?>
   :</label>
   <?php wp_dropdown_pages(array('show_option_none' => ' ', 'name' => $this->get_field_name(key($defaults)), 'selected' => $instance[key($defaults)]));?>
 </p>
@@ -76,7 +76,7 @@ class freesiaempire_portfolio_widget extends WP_Widget {
 	}
 
 	function widget($args, $instance) {
-		$freesiaempire_settings = freesiaempire_get_theme_options();
+		$acyaempire_settings = acyaempire_get_theme_options();
 		extract($args);
 		extract($instance);
 		$number = empty( $instance['number'] ) ? 7 : $instance['number'];
@@ -102,7 +102,7 @@ class freesiaempire_portfolio_widget extends WP_Widget {
 			));
 		echo '<!-- Portfolio Widget ============================================= -->' .$before_widget;
 		echo '<div class="portfolio-container clearfix">'; ?>
-<div class="four-column-full-width freesia-animation zoomIn" data-wow-delay="0.3s">
+<div class="four-column-full-width acya-animation zoomIn" data-wow-delay="0.3s">
 	<?php if (!empty($title)) { echo $before_title . esc_attr($title) . $after_title; }
 			if(!empty($text)){ ?>
 	<p class="widget-highlighted-sub-title wow fadeInUp"><?php echo esc_attr($text); ?></p>
@@ -113,7 +113,7 @@ class freesiaempire_portfolio_widget extends WP_Widget {
 </div>
 	<?php
 	while ($get_featured_pages->have_posts()):$get_featured_pages->the_post(); ?>
-		<div class="four-column-full-width freesia-animation zoomIn">
+		<div class="four-column-full-width acya-animation zoomIn">
 		<?php $page_title = get_the_title();
 				if (has_post_thumbnail()) { ?>
  		<?php
@@ -134,16 +134,16 @@ class freesiaempire_portfolio_widget extends WP_Widget {
 					}?>
     </p>
     <?php endif; ?>
-    <?php $freesiaempire_tag_text = $freesiaempire_settings['freesiaempire_tag_text'];
+    <?php $acyaempire_tag_text = $acyaempire_settings['acyaempire_tag_text'];
 					$excerpt = get_the_excerpt();
 					$content = get_the_content();
 					if(strlen($excerpt) < strlen($content) || strlen($excerpt) > 130){ ?>
     <p><a class="more-link" title="<?php the_title_attribute();?>" href="<?php the_permalink();?>">
       <?php
-							if($freesiaempire_tag_text == 'Read More' || $freesiaempire_tag_text == ''):
-								_e('Read More', 'freesia-empire');
+							if($acyaempire_tag_text == 'Read More' || $acyaempire_tag_text == ''):
+								_e('Read More', 'acya-empire');
 							else:
-								echo esc_attr($freesiaempire_tag_text);
+								echo esc_attr($acyaempire_tag_text);
 							endif;?>
       </a></p>
     <?php } ?>

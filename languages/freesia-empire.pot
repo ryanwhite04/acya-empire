@@ -1,11 +1,11 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: freesia-empire 1.0\n"
+"Project-Id-Version: acya-empire 1.0\n"
 "POT-Creation-Date: 2016-02-09 07:09+0545\n"
 "PO-Revision-Date: 2015-08-07 08:34+0545\n"
 "Last-Translator: \n"
-"Language-Team: ThemeFreesia <themefreesia@gmail.com>\n"
+"Language-Team: ThemeACYA <themeacya@gmail.com>\n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -66,10 +66,10 @@ msgstr ""
 msgid ", "
 msgstr ""
 
-#: content.php:80 inc/settings/freesiaempire-functions.php:211
+#: content.php:80 inc/settings/acyaempire-functions.php:211
 #: inc/widgets/widgets-functions/portfolio-widgets.php:143
 #: inc/widgets/widgets-functions/post-widgets.php:149
-#: page-templates/freesiaempire-corporate.php:79
+#: page-templates/acyaempire-corporate.php:79
 msgid "Read More"
 msgstr ""
 
@@ -86,7 +86,7 @@ msgid "Add Social Icons Only"
 msgstr ""
 
 #: functions.php:127 functions.php:128
-msgid "Review Freesia Empire"
+msgid "Review ACYA Empire"
 msgstr ""
 
 #: functions.php:130 functions.php:131
@@ -102,11 +102,11 @@ msgid "View Demo"
 msgstr ""
 
 #: functions.php:139 functions.php:140
-msgid "View ThemeFreesia Themes"
+msgid "View ThemeACYA Themes"
 msgstr ""
 
 #: functions.php:146
-msgid "About Freesia Empire"
+msgid "About ACYA Empire"
 msgstr ""
 
 #: inc/customizer/functions/design-options.php:11
@@ -201,7 +201,7 @@ msgid "Design Layout"
 msgstr ""
 
 #: inc/customizer/functions/design-options.php:132
-#: inc/settings/freesiaempire-common-functions.php:57
+#: inc/settings/acyaempire-common-functions.php:57
 msgid "Full Width Layout"
 msgstr ""
 
@@ -273,19 +273,19 @@ msgid " Feature #"
 msgstr ""
 
 #: inc/customizer/functions/register-panel.php:16
-msgid "Freesia Empire WordPress Settings"
+msgid "ACYA Empire WordPress Settings"
 msgstr ""
 
 #: inc/customizer/functions/register-panel.php:26
-msgid "Freesia Empire Theme Options"
+msgid "ACYA Empire Theme Options"
 msgstr ""
 
 #: inc/customizer/functions/register-panel.php:36
-msgid "Freesia Empire Slider Options"
+msgid "ACYA Empire Slider Options"
 msgstr ""
 
 #: inc/customizer/functions/register-panel.php:46
-msgid "Freesia Empire Widgets"
+msgid "ACYA Empire Widgets"
 msgstr ""
 
 #: inc/customizer/functions/theme-options.php:11
@@ -341,7 +341,7 @@ msgid "Disable"
 msgstr ""
 
 #: inc/customizer/functions/theme-options.php:89
-msgid "Freesia Empire Options"
+msgid "ACYA Empire Options"
 msgstr ""
 
 #: inc/customizer/functions/theme-options.php:100
@@ -397,7 +397,7 @@ msgid "WordPress"
 msgstr ""
 
 #: inc/footer-details.php:19 inc/footer-details.php:28
-msgid "Themefreesia"
+msgid "Themeacya"
 msgstr ""
 
 #: inc/footer-details.php:28
@@ -405,127 +405,127 @@ msgid "Designed by:"
 msgstr ""
 
 #: inc/footer-details.php:28
-msgid "Theme Freesia"
+msgid "Theme ACYA"
 msgstr ""
 
 #: inc/footer-details.php:29
 msgid "Powered by:"
 msgstr ""
 
-#: inc/settings/freesiaempire-common-functions.php:15
+#: inc/settings/acyaempire-common-functions.php:15
 msgid "Comment navigation"
 msgstr ""
 
-#: inc/settings/freesiaempire-common-functions.php:18
+#: inc/settings/acyaempire-common-functions.php:18
 msgid "Older Comments"
 msgstr ""
 
-#: inc/settings/freesiaempire-common-functions.php:21
+#: inc/settings/acyaempire-common-functions.php:21
 msgid "Newer Comments"
 msgstr ""
 
-#: inc/settings/freesiaempire-common-functions.php:46
+#: inc/settings/acyaempire-common-functions.php:46
 msgid "Default Layout Set in"
 msgstr ""
 
-#: inc/settings/freesiaempire-common-functions.php:46
+#: inc/settings/acyaempire-common-functions.php:46
 msgid "Customizer"
 msgstr ""
 
-#: inc/settings/freesiaempire-common-functions.php:52
+#: inc/settings/acyaempire-common-functions.php:52
 msgid "No sidebar Layout"
 msgstr ""
 
-#: inc/settings/freesiaempire-common-functions.php:62
+#: inc/settings/acyaempire-common-functions.php:62
 msgid "Left sidebar Layout"
 msgstr ""
 
-#: inc/settings/freesiaempire-common-functions.php:67
+#: inc/settings/acyaempire-common-functions.php:67
 msgid "Right sidebar Layout"
 msgstr ""
 
-#: inc/settings/freesiaempire-common-functions.php:74
+#: inc/settings/acyaempire-common-functions.php:74
 msgid "Select layout for this specific Page only"
 msgstr ""
 
-#: inc/settings/freesiaempire-common-functions.php:80
+#: inc/settings/acyaempire-common-functions.php:80
 msgid "Select layout for this specific Post only"
 msgstr ""
 
-#: inc/settings/freesiaempire-common-functions.php:162
+#: inc/settings/acyaempire-common-functions.php:162
 msgid "on"
 msgstr ""
 
-#: inc/settings/freesiaempire-common-functions.php:186
+#: inc/settings/acyaempire-common-functions.php:186
 #, php-format
 msgid "Author: %s"
 msgstr ""
 
-#: inc/settings/freesiaempire-common-functions.php:189
+#: inc/settings/acyaempire-common-functions.php:189
 #, php-format
 msgid "Day: %s"
 msgstr ""
 
-#: inc/settings/freesiaempire-common-functions.php:191
+#: inc/settings/acyaempire-common-functions.php:191
 #, php-format
 msgid "Month: %s"
 msgstr ""
 
-#: inc/settings/freesiaempire-common-functions.php:193
+#: inc/settings/acyaempire-common-functions.php:193
 #, php-format
 msgid "Year: %s"
 msgstr ""
 
-#: inc/settings/freesiaempire-common-functions.php:195
+#: inc/settings/acyaempire-common-functions.php:195
 msgid "Audios"
 msgstr ""
 
-#: inc/settings/freesiaempire-common-functions.php:197
+#: inc/settings/acyaempire-common-functions.php:197
 msgid "Asides"
 msgstr ""
 
-#: inc/settings/freesiaempire-common-functions.php:199
+#: inc/settings/acyaempire-common-functions.php:199
 msgid "Images"
 msgstr ""
 
-#: inc/settings/freesiaempire-common-functions.php:201
+#: inc/settings/acyaempire-common-functions.php:201
 msgid "Galleries"
 msgstr ""
 
-#: inc/settings/freesiaempire-common-functions.php:203
+#: inc/settings/acyaempire-common-functions.php:203
 msgid "Videos"
 msgstr ""
 
-#: inc/settings/freesiaempire-common-functions.php:205
+#: inc/settings/acyaempire-common-functions.php:205
 #: tgm/class-tgm-plugin-activation.php:2445
 msgid "Status"
 msgstr ""
 
-#: inc/settings/freesiaempire-common-functions.php:207
+#: inc/settings/acyaempire-common-functions.php:207
 msgid "Quotes"
 msgstr ""
 
-#: inc/settings/freesiaempire-common-functions.php:209
+#: inc/settings/acyaempire-common-functions.php:209
 msgid "links"
 msgstr ""
 
-#: inc/settings/freesiaempire-common-functions.php:211
+#: inc/settings/acyaempire-common-functions.php:211
 msgid "Chats"
 msgstr ""
 
-#: inc/settings/freesiaempire-common-functions.php:217
+#: inc/settings/acyaempire-common-functions.php:217
 msgid "Archives"
 msgstr ""
 
-#: inc/settings/freesiaempire-common-functions.php:222
+#: inc/settings/acyaempire-common-functions.php:222
 msgid "Page NOT Found"
 msgstr ""
 
-#: inc/settings/freesiaempire-common-functions.php:224
+#: inc/settings/acyaempire-common-functions.php:224
 msgid "Search Results"
 msgstr ""
 
-#: inc/settings/freesiaempire-functions.php:113
+#: inc/settings/acyaempire-functions.php:113
 msgid "Upgrade to Pro"
 msgstr ""
 

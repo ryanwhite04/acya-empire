@@ -1,14 +1,14 @@
 <?php
 /**
- * Display all freesiaempire functions and definitions
+ * Display all acyaempire functions and definitions
  *
- * @package Theme Freesia
- * @subpackage Freesia Empire
- * @since Freesia Empire 1.0
+ * @package Theme ACYA
+ * @subpackage ACYA Empire
+ * @since ACYA Empire 1.0
  */
 
 /************************************************************************************************/
-if ( ! function_exists( 'freesiaempire_setup' ) ) :
+if ( ! function_exists( 'acyaempire_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -16,7 +16,7 @@ if ( ! function_exists( 'freesiaempire_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function freesiaempire_setup() {
+function acyaempire_setup() {
 	/**
 	 * Set the content width based on the theme's design and stylesheet.
 	 */
@@ -28,10 +28,10 @@ function freesiaempire_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on freesiaempire, use a find and replace
-	 * to change 'freesia-empire' to the name of your theme in all the template files
+	 * If you're building a theme based on acyaempire, use a find and replace
+	 * to change 'acya-empire' to the name of your theme in all the template files
 	 */
-	load_theme_textdomain( 'freesia-empire', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'acya-empire', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -51,10 +51,10 @@ function freesiaempire_setup() {
 
 	// This theme uses wp_nav_menu() in three location.
 	register_nav_menus( array(
-		'primary' => __( 'Main Menu', 'freesia-empire' ),
-		'social-link'  => __( 'Add Social Icons Only', 'freesia-empire' ),
+		'primary' => __( 'Main Menu', 'acya-empire' ),
+		'social-link'  => __( 'Add Social Icons Only', 'acya-empire' ),
 	) );
-	add_image_size('freesiaempire_slider_image', 1920, 1080, true);
+	add_image_size('acyaempire_slider_image', 1920, 1080, true);
 
 	/*
 	 * Switch default core markup for comment form, and comments
@@ -70,7 +70,7 @@ function freesiaempire_setup() {
 	add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'image', 'quote', 'video', 'audio' ) );
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'freesiaempire_custom_background_args', array(
+	add_theme_support( 'custom-background', apply_filters( 'acyaempire_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
@@ -83,83 +83,83 @@ function freesiaempire_setup() {
 
 	add_theme_support( 'woocommerce' );
 }
-endif; // freesiaempire_setup
-add_action( 'after_setup_theme', 'freesiaempire_setup' );
+endif; // acyaempire_setup
+add_action( 'after_setup_theme', 'acyaempire_setup' );
 
 /***************************************************************************************/
-function freesiaempire_content_width() {
+function acyaempire_content_width() {
 	if ( is_page_template( 'page-templates/gallery-template.php' ) || is_attachment() ) {
 		global $content_width;
 		$content_width = 1170;
 	}
 }
-add_action( 'template_redirect', 'freesiaempire_content_width' );
+add_action( 'template_redirect', 'acyaempire_content_width' );
 
 /***************************************************************************************/
-if(!function_exists('freesiaempire_get_theme_options')):
-	function freesiaempire_get_theme_options() {
-	    return wp_parse_args(  get_option( 'freesiaempire_theme_options', array() ),  freesiaempire_get_option_defaults_values() );
+if(!function_exists('acyaempire_get_theme_options')):
+	function acyaempire_get_theme_options() {
+	    return wp_parse_args(  get_option( 'acyaempire_theme_options', array() ),  acyaempire_get_option_defaults_values() );
 	}
 endif;
 
 /***************************************************************************************/
-require get_template_directory() . '/inc/customizer/freesiaempire-default-values.php';
-require( get_template_directory() . '/inc/settings/freesiaempire-functions.php' );
-require( get_template_directory() . '/inc/settings/freesiaempire-common-functions.php' );
+require get_template_directory() . '/inc/customizer/acyaempire-default-values.php';
+require( get_template_directory() . '/inc/settings/acyaempire-functions.php' );
+require( get_template_directory() . '/inc/settings/acyaempire-common-functions.php' );
 require get_template_directory() . '/inc/jetpack.php';
 require get_template_directory() . '/inc/footer-details.php';
 
 require get_template_directory() . '/tgm/class-tgm-plugin-activation.php';
 require get_template_directory() . '/tgm/tgm.php';
 
-/************************ Freesia Empire Widgets  *****************************/
+/************************ ACYA Empire Widgets  *****************************/
 require get_template_directory() . '/inc/widgets/widgets-functions/contactus-widgets.php';
 require get_template_directory() . '/inc/widgets/widgets-functions/post-widgets.php';
 require get_template_directory() . '/inc/widgets/widgets-functions/register-widgets.php';
 require get_template_directory() . '/inc/widgets/widgets-functions/testimonials-widgets.php';
 require get_template_directory() . '/inc/widgets/widgets-functions/portfolio-widgets.php';
 
-/************************ Freesia Empire Customizer  *****************************/
+/************************ ACYA Empire Customizer  *****************************/
 require get_template_directory() . '/inc/customizer/functions/sanitize-functions.php';
 require get_template_directory() . '/inc/customizer/functions/register-panel.php';
-function freesiaempire_customize_register( $wp_customize ) {
-if(!class_exists('Freesia_Empire_Plus_Features')){
-	class freesiaempire_upgrade extends WP_Customize_Control {
+function acyaempire_customize_register( $wp_customize ) {
+if(!class_exists('ACYA_Empire_Plus_Features')){
+	class acyaempire_upgrade extends WP_Customize_Control {
 		public function render_content() { ?>
-			<a title="<?php esc_attr_e( 'Review Freesia Empire', 'freesia-empire' ); ?>" href="<?php echo esc_url( 'https://wordpress.org/support/view/theme-reviews/freesia-empire/' ); ?>" target="_blank" id="about_freesiaempire">
-			<?php _e( 'Review Freesia Empire', 'freesia-empire' ); ?>
+			<a title="<?php esc_attr_e( 'Review ACYA Empire', 'acya-empire' ); ?>" href="<?php echo esc_url( 'https://wordpress.org/support/view/theme-reviews/acya-empire/' ); ?>" target="_blank" id="about_acyaempire">
+			<?php _e( 'Review ACYA Empire', 'acya-empire' ); ?>
 			</a><br/>
-			<a href="<?php echo esc_url( 'http://themefreesia.com/theme-instruction/freesia-empire/' ); ?>" title="<?php esc_attr_e( 'Theme Instructions', 'freesia-empire' ); ?>" target="_blank" id="about_freesiaempire">
-			<?php _e( 'Theme Instructions', 'freesia-empire' ); ?>
+			<a href="<?php echo esc_url( 'http://themeacya.com/theme-instruction/acya-empire/' ); ?>" title="<?php esc_attr_e( 'Theme Instructions', 'acya-empire' ); ?>" target="_blank" id="about_acyaempire">
+			<?php _e( 'Theme Instructions', 'acya-empire' ); ?>
 			</a><br/>
-			<a href="<?php echo esc_url( 'http://themefreesia.com/support-forum/' ); ?>" title="<?php esc_attr_e( 'Forum', 'freesia-empire' ); ?>" target="_blank" id="about_freesiaempire">
-			<?php _e( 'Forum', 'freesia-empire' ); ?>
+			<a href="<?php echo esc_url( 'http://themeacya.com/support-forum/' ); ?>" title="<?php esc_attr_e( 'Forum', 'acya-empire' ); ?>" target="_blank" id="about_acyaempire">
+			<?php _e( 'Forum', 'acya-empire' ); ?>
 			</a><br/>
-			<a href="<?php echo esc_url( 'http://demo.themefreesia.com/freesia-empire/' ); ?>" title="<?php esc_attr_e( 'View Demo', 'freesia-empire' ); ?>" target="_blank" id="about_freesiaempire">
-			<?php _e( 'View Demo', 'freesia-empire' ); ?>
+			<a href="<?php echo esc_url( 'http://demo.themeacya.com/acya-empire/' ); ?>" title="<?php esc_attr_e( 'View Demo', 'acya-empire' ); ?>" target="_blank" id="about_acyaempire">
+			<?php _e( 'View Demo', 'acya-empire' ); ?>
 			</a><br/>
-			<a href="<?php echo esc_url(home_url('/')).'wp-admin/theme-install.php?search=author:themefreesia'; ?>" title="<?php esc_attr_e( 'View ThemeFreesia Themes', 'freesia-empire' ); ?>" target="_blank" id="about_freesiaempire">
-			<?php _e( 'View ThemeFreesia Themes', 'freesia-empire' ); ?>
+			<a href="<?php echo esc_url(home_url('/')).'wp-admin/theme-install.php?search=author:themeacya'; ?>" title="<?php esc_attr_e( 'View ThemeACYA Themes', 'acya-empire' ); ?>" target="_blank" id="about_acyaempire">
+			<?php _e( 'View ThemeACYA Themes', 'acya-empire' ); ?>
 			</a><br/>
 		<?php
 		}
 	}
-	$wp_customize->add_section('freesiaempire_upgrade_links', array(
-		'title'					=> __('About Freesia Empire', 'freesia-empire'),
+	$wp_customize->add_section('acyaempire_upgrade_links', array(
+		'title'					=> __('About ACYA Empire', 'acya-empire'),
 		'priority'				=> 1,
 	));
-	$wp_customize->add_setting( 'freesiaempire_upgrade_links', array(
+	$wp_customize->add_setting( 'acyaempire_upgrade_links', array(
 		'default'				=> false,
 		'capability'			=> 'edit_theme_options',
 		'sanitize_callback'	=> 'wp_filter_nohtml_kses',
 	));
 	$wp_customize->add_control(
-		new freesiaempire_upgrade(
+		new acyaempire_upgrade(
 		$wp_customize,
-		'freesiaempire_upgrade_links',
+		'acyaempire_upgrade_links',
 			array(
-				'section'				=> 'freesiaempire_upgrade_links',
-				'settings'				=> 'freesiaempire_upgrade_links',
+				'section'				=> 'acyaempire_upgrade_links',
+				'settings'				=> 'acyaempire_upgrade_links',
 			)
 		)
 	);
@@ -170,29 +170,29 @@ if(!class_exists('Freesia_Empire_Plus_Features')){
 	require get_template_directory() . '/inc/customizer/functions/featured-content-customizer.php' ;
 }
 
-add_action( 'customize_register', 'freesiaempire_customize_register' );
-add_action( 'customize_preview_init', 'freesiaempire_customize_preview_js' );
+add_action( 'customize_register', 'acyaempire_customize_register' );
+add_action( 'customize_preview_init', 'acyaempire_customize_preview_js' );
 /**************************************************************************************/
 
 // Add Post Class Clearfix
-function freesiaempire_post_class_clearfix( $classes ) {
+function acyaempire_post_class_clearfix( $classes ) {
 	$classes[] = 'clearfix';
 	return $classes;
 }
-add_filter( 'post_class', 'freesiaempire_post_class_clearfix' );
+add_filter( 'post_class', 'acyaempire_post_class_clearfix' );
 
 /******************* Front Page *************************/
-function freesiaempire_display_front_page(){
+function acyaempire_display_front_page(){
 	require get_template_directory() . '/index.php';
 }
 
-add_action('freesiaempire_show_front_page','freesiaempire_display_front_page');
+add_action('acyaempire_show_front_page','acyaempire_display_front_page');
 
-/******************* Freesia Empire Header Display *************************/
-function freesiaempire_header_display(){
-	$freesiaempire_settings = freesiaempire_get_theme_options();
-	$header_display = $freesiaempire_settings['freesiaempire_header_display'];
-	$header_logo = $freesiaempire_settings['freesiaempire-img-upload-header-logo'];
+/******************* ACYA Empire Header Display *************************/
+function acyaempire_header_display(){
+	$acyaempire_settings = acyaempire_get_theme_options();
+	$header_display = $acyaempire_settings['acyaempire_header_display'];
+	$header_logo = $acyaempire_settings['acyaempire-img-upload-header-logo'];
 	if ($header_display == 'header_text') { ?>
 		<div id="site-branding">
 		<?php if(is_home() || is_front_page()){ ?>
@@ -224,5 +224,5 @@ function freesiaempire_header_display(){
 		</div> <!-- end #site-branding -->
 		<?php }
 }
-add_action('freesiaempire_site_branding','freesiaempire_header_display');
+add_action('acyaempire_site_branding','acyaempire_header_display');
 ?>

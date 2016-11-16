@@ -2,15 +2,15 @@
 /**
  * Displays the header content
  *
- * @package Theme Freesia
- * @subpackage Freesia Empire
- * @since Freesia Empire 1.0
+ * @package Theme ACYA
+ * @subpackage ACYA Empire
+ * @since ACYA Empire 1.0
  */
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <?php
-$freesiaempire_settings = freesiaempire_get_theme_options(); ?>
+$acyaempire_settings = acyaempire_get_theme_options(); ?>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <link rel="profile" href="http://gmpg.org/xfn/11" />
@@ -22,12 +22,12 @@ $freesiaempire_settings = freesiaempire_get_theme_options(); ?>
 <!-- Masthead ============================================= -->
 <header id="masthead" class="site-header">
 	<?php
-				if($header_image = $freesiaempire_settings['freesiaempire_display_header_image'] == 'top'){
-					do_action('freesiaempire_header_image');
+				if($header_image = $acyaempire_settings['acyaempire_display_header_image'] == 'top'){
+					do_action('acyaempire_header_image');
 				}
 				echo '<div class="top-header">
 						<div class="container clearfix">';
-						do_action('freesiaempire_site_branding');
+						do_action('acyaempire_site_branding');
 
 						echo '<div class="menu-toggle">      
 								<div class="line-one"></div>
@@ -36,16 +36,16 @@ $freesiaempire_settings = freesiaempire_get_theme_options(); ?>
 							</div>';
 
 						echo '<div class="header-info clearfix">';
-							if(has_nav_menu('social-link') && $freesiaempire_settings['freesiaempire_top_social_icons'] == 0):
+							if(has_nav_menu('social-link') && $acyaempire_settings['acyaempire_top_social_icons'] == 0):
 								echo '<div class="header-social-block">';
 									do_action('social_links');
 								echo '</div>'.'<!-- end .header-social-block -->';
 							endif;
-							if( is_active_sidebar( 'freesiaempire_header_info' )) {
-								dynamic_sidebar( 'freesiaempire_header_info' );
+							if( is_active_sidebar( 'acyaempire_header_info' )) {
+								dynamic_sidebar( 'acyaempire_header_info' );
 							}
 						echo ' </div> <!-- end .header-info -->';
-						$search_form = $freesiaempire_settings['freesiaempire_search_custom_header'];
+						$search_form = $acyaempire_settings['acyaempire_search_custom_header'];
 						if (1 != $search_form) { ?>
 							<div id="search-toggle" class="header-search"></div>
 							<div id="search-box" class="clearfix">
@@ -55,8 +55,8 @@ $freesiaempire_settings = freesiaempire_get_theme_options(); ?>
 
 					echo '</div> <!-- end .container -->
 				</div> <!-- end .top-header -->';
-			if($header_image = $freesiaempire_settings['freesiaempire_display_header_image'] == 'below'){
-				do_action('freesiaempire_header_image');
+			if($header_image = $acyaempire_settings['acyaempire_display_header_image'] == 'below'){
+				do_action('acyaempire_header_image');
 			} 
 			?>
 	<!-- Main Header============================================= -->
@@ -81,44 +81,44 @@ $freesiaempire_settings = freesiaempire_get_theme_options(); ?>
 		</div> <!-- end .container -->
 	</div> <!-- end #sticky_header -->
 	<?php
-		$enable_slider = $freesiaempire_settings['freesiaempire_enable_slider'];
-		freesiaempire_slider_value();
+		$enable_slider = $acyaempire_settings['acyaempire_enable_slider'];
+		acyaempire_slider_value();
 		if ($enable_slider=='frontpage'|| $enable_slider=='enitresite'){
 			if(is_front_page() && ($enable_slider=='frontpage') ) {
-				if($freesiaempire_settings['freesiaempire_slider_type'] == 'default_slider') {
-						freesiaempire_page_sliders();
+				if($acyaempire_settings['acyaempire_slider_type'] == 'default_slider') {
+						acyaempire_page_sliders();
 				}else{
-					if(class_exists('Freesia_Empire_Plus_Features')):
-						freesiaempire_image_sliders();
+					if(class_exists('ACYA_Empire_Plus_Features')):
+						acyaempire_image_sliders();
 					endif;
 				}
 			}
 			if($enable_slider=='enitresite'){
-				if($freesiaempire_settings['freesiaempire_slider_type'] == 'default_slider') {
-						freesiaempire_page_sliders();
+				if($acyaempire_settings['acyaempire_slider_type'] == 'default_slider') {
+						acyaempire_page_sliders();
 				}else{
-					if(class_exists('Freesia_Empire_Plus_Features')):
-						freesiaempire_image_sliders();
+					if(class_exists('ACYA_Empire_Plus_Features')):
+						acyaempire_image_sliders();
 					endif;
 				}
 			}
 		}
-		if(!is_page_template('page-templates/freesiaempire-corporate.php') && !is_page_template('alter-front-page-template.php')) {
-			if (('' != freesiaempire_header_title()) || function_exists('bcn_display_list')) {
+		if(!is_page_template('page-templates/acyaempire-corporate.php') && !is_page_template('alter-front-page-template.php')) {
+			if (('' != acyaempire_header_title()) || function_exists('bcn_display_list')) {
 				if(is_home()){
-					if($freesiaempire_settings['freesiaempire_blog_header_display'] == 'show'){ ?>
+					if($acyaempire_settings['acyaempire_blog_header_display'] == 'show'){ ?>
 						<div class="page-header clearfix">
 							<div class="container">
-									<h2 class="page-title"><?php echo freesiaempire_header_title();?></h2> <!-- .page-title -->
-									<?php freesiaempire_breadcrumb(); ?>
+									<h2 class="page-title"><?php echo acyaempire_header_title();?></h2> <!-- .page-title -->
+									<?php acyaempire_breadcrumb(); ?>
 							</div> <!-- .container -->
 						</div> <!-- .page-header -->
 					<?php }
 				} else { ?>
 						<div class="page-header clearfix">
 							<div class="container">
-									<h1 class="page-title"><?php echo freesiaempire_header_title();?></h1> <!-- .page-title -->
-									<?php freesiaempire_breadcrumb(); ?>
+									<h1 class="page-title"><?php echo acyaempire_header_title();?></h1> <!-- .page-title -->
+									<?php acyaempire_breadcrumb(); ?>
 							</div> <!-- .container -->
 						</div> <!-- .page-header -->
 				<?php }
@@ -127,7 +127,7 @@ $freesiaempire_settings = freesiaempire_get_theme_options(); ?>
 </header> <!-- end #masthead -->
 <!-- Main Page Start ============================================= -->
 <div id="content">
-<?php if (!is_page_template('page-templates/freesiaempire-corporate.php') ){ 
+<?php if (!is_page_template('page-templates/acyaempire-corporate.php') ){ 
   if(is_page_template('three-column-blog-template.php') || is_page_template('our-team-template.php') || is_page_template('about-us-template.php') || is_page_template('portfolio-template.php') ){
 
 	}else{?>

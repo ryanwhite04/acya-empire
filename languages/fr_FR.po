@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Freesia Empire\n"
+"Project-Id-Version: ACYA Empire\n"
 "POT-Creation-Date: 2016-04-07 14:57+0200\n"
 "PO-Revision-Date: 2016-04-08 08:09+0200\n"
 "Last-Translator: \n"
@@ -79,10 +79,10 @@ msgstr "Catégorie :"
 msgid ", "
 msgstr ","
 
-#: content.php:80 inc/settings/freesiaempire-functions.php:211
+#: content.php:80 inc/settings/acyaempire-functions.php:211
 #: inc/widgets/widgets-functions/portfolio-widgets.php:143
 #: inc/widgets/widgets-functions/post-widgets.php:149
-#: page-templates/freesiaempire-corporate.php:79
+#: page-templates/acyaempire-corporate.php:79
 msgid "Read More"
 msgstr "Lisez la suite"
 
@@ -99,8 +99,8 @@ msgid "Add Social Icons Only"
 msgstr "Ajoutez Seulement des Icônes Sociales "
 
 #: functions.php:129 functions.php:130
-msgid "Review Freesia Empire"
-msgstr "Avis sur Freesia Empire"
+msgid "Review ACYA Empire"
+msgstr "Avis sur ACYA Empire"
 
 #: functions.php:132 functions.php:133
 msgid "Theme Instructions"
@@ -115,12 +115,12 @@ msgid "View Demo"
 msgstr "Voir la démo"
 
 #: functions.php:141 functions.php:142
-msgid "View ThemeFreesia Themes"
-msgstr "Voir les Thèmes ThemeFreesia "
+msgid "View ThemeACYA Themes"
+msgstr "Voir les Thèmes ThemeACYA "
 
 #: functions.php:148
-msgid "About Freesia Empire"
-msgstr "A Propos de Freesia Empire"
+msgid "About ACYA Empire"
+msgstr "A Propos de ACYA Empire"
 
 #: inc/customizer/functions/design-options.php:11
 msgid "Layout Options"
@@ -214,7 +214,7 @@ msgid "Design Layout"
 msgstr "Conception mise en page"
 
 #: inc/customizer/functions/design-options.php:132
-#: inc/settings/freesiaempire-common-functions.php:57
+#: inc/settings/acyaempire-common-functions.php:57
 msgid "Full Width Layout"
 msgstr "Mise en page pleine largeur"
 
@@ -286,20 +286,20 @@ msgid " Feature #"
 msgstr "Fonctionnalité #"
 
 #: inc/customizer/functions/register-panel.php:16
-msgid "Freesia Empire WordPress Settings"
-msgstr "Paramètres d'Empire Freesia pour WordPress"
+msgid "ACYA Empire WordPress Settings"
+msgstr "Paramètres d'Empire ACYA pour WordPress"
 
 #: inc/customizer/functions/register-panel.php:26
-msgid "Freesia Empire Theme Options"
-msgstr "Options du thème Empire freesia"
+msgid "ACYA Empire Theme Options"
+msgstr "Options du thème Empire acya"
 
 #: inc/customizer/functions/register-panel.php:36
-msgid "Freesia Empire Slider Options"
-msgstr "Options du Slider Empire freesia"
+msgid "ACYA Empire Slider Options"
+msgstr "Options du Slider Empire acya"
 
 #: inc/customizer/functions/register-panel.php:46
-msgid "Freesia Empire Widgets"
-msgstr "Widgets pour Freesia Empire"
+msgid "ACYA Empire Widgets"
+msgstr "Widgets pour ACYA Empire"
 
 #: inc/customizer/functions/theme-options.php:11
 msgid "Site Title & Logo Options"
@@ -354,8 +354,8 @@ msgid "Disable"
 msgstr "Désactiver"
 
 #: inc/customizer/functions/theme-options.php:89
-msgid "Freesia Empire Options"
-msgstr "Options du thème Empire freesia"
+msgid "ACYA Empire Options"
+msgstr "Options du thème Empire acya"
 
 #: inc/customizer/functions/theme-options.php:100
 msgid "Disable Search Form"
@@ -412,8 +412,8 @@ msgid "WordPress"
 msgstr "WordPress"
 
 #: inc/footer-details.php:19 inc/footer-details.php:28
-msgid "Themefreesia"
-msgstr "Themefreesia"
+msgid "Themeacya"
+msgstr "Themeacya"
 
 #: inc/footer-details.php:28
 msgid "Designed by:"
@@ -421,128 +421,128 @@ msgstr "Conçu par"
 
 #. Author of the plugin/theme
 #: inc/footer-details.php:28
-msgid "Theme Freesia"
-msgstr "Thème Freesia"
+msgid "Theme ACYA"
+msgstr "Thème ACYA"
 
 #: inc/footer-details.php:29
 msgid "Powered by:"
 msgstr "Propulsé par:"
 
-#: inc/settings/freesiaempire-common-functions.php:15
+#: inc/settings/acyaempire-common-functions.php:15
 msgid "Comment navigation"
 msgstr "Navigation de commentaire"
 
-#: inc/settings/freesiaempire-common-functions.php:18
+#: inc/settings/acyaempire-common-functions.php:18
 msgid "Older Comments"
 msgstr "Commentaires plus anciens"
 
-#: inc/settings/freesiaempire-common-functions.php:21
+#: inc/settings/acyaempire-common-functions.php:21
 msgid "Newer Comments"
 msgstr "Commentaires plus récents"
 
-#: inc/settings/freesiaempire-common-functions.php:46
+#: inc/settings/acyaempire-common-functions.php:46
 msgid "Default Layout Set in"
 msgstr "Mise en forme par défaut - définir"
 
-#: inc/settings/freesiaempire-common-functions.php:46
+#: inc/settings/acyaempire-common-functions.php:46
 msgid "Customizer"
 msgstr "Personnalisation"
 
-#: inc/settings/freesiaempire-common-functions.php:52
+#: inc/settings/acyaempire-common-functions.php:52
 msgid "No sidebar Layout"
 msgstr "Disposition sans Barre latérale"
 
-#: inc/settings/freesiaempire-common-functions.php:62
+#: inc/settings/acyaempire-common-functions.php:62
 msgid "Left sidebar Layout"
 msgstr "Disposition Barre latérale de gauche"
 
-#: inc/settings/freesiaempire-common-functions.php:67
+#: inc/settings/acyaempire-common-functions.php:67
 msgid "Right sidebar Layout"
 msgstr "Disposition Barre latérale de droite"
 
-#: inc/settings/freesiaempire-common-functions.php:74
+#: inc/settings/acyaempire-common-functions.php:74
 msgid "Select layout for this specific Page only"
 msgstr "Sélectionnez une mise en page spécifique pour cette page"
 
-#: inc/settings/freesiaempire-common-functions.php:80
+#: inc/settings/acyaempire-common-functions.php:80
 msgid "Select layout for this specific Post only"
 msgstr "Sélectionnez une mise en page spécifique pour cet article uniquement"
 
-#: inc/settings/freesiaempire-common-functions.php:162
+#: inc/settings/acyaempire-common-functions.php:162
 msgctxt "Roboto font: on or off"
 msgid "on"
 msgstr "on"
 
-#: inc/settings/freesiaempire-common-functions.php:186
+#: inc/settings/acyaempire-common-functions.php:186
 #, php-format
 msgid "Author: %s"
 msgstr "Auteur : %s"
 
-#: inc/settings/freesiaempire-common-functions.php:189
+#: inc/settings/acyaempire-common-functions.php:189
 #, php-format
 msgid "Day: %s"
 msgstr "Jour : %s"
 
-#: inc/settings/freesiaempire-common-functions.php:191
+#: inc/settings/acyaempire-common-functions.php:191
 #, php-format
 msgid "Month: %s"
 msgstr "Mois : %s"
 
-#: inc/settings/freesiaempire-common-functions.php:193
+#: inc/settings/acyaempire-common-functions.php:193
 #, php-format
 msgid "Year: %s"
 msgstr "Année: %s"
 
-#: inc/settings/freesiaempire-common-functions.php:195
+#: inc/settings/acyaempire-common-functions.php:195
 msgid "Audios"
 msgstr "Audios"
 
-#: inc/settings/freesiaempire-common-functions.php:197
+#: inc/settings/acyaempire-common-functions.php:197
 msgid "Asides"
 msgstr "Apartés"
 
-#: inc/settings/freesiaempire-common-functions.php:199
+#: inc/settings/acyaempire-common-functions.php:199
 msgid "Images"
 msgstr "Images"
 
-#: inc/settings/freesiaempire-common-functions.php:201
+#: inc/settings/acyaempire-common-functions.php:201
 msgid "Galleries"
 msgstr "Galeries"
 
-#: inc/settings/freesiaempire-common-functions.php:203
+#: inc/settings/acyaempire-common-functions.php:203
 msgid "Videos"
 msgstr "Vidéos"
 
-#: inc/settings/freesiaempire-common-functions.php:205
+#: inc/settings/acyaempire-common-functions.php:205
 #: tgm/class-tgm-plugin-activation.php:2445
 msgid "Status"
 msgstr "Statut"
 
-#: inc/settings/freesiaempire-common-functions.php:207
+#: inc/settings/acyaempire-common-functions.php:207
 msgid "Quotes"
 msgstr "Citations"
 
-#: inc/settings/freesiaempire-common-functions.php:209
+#: inc/settings/acyaempire-common-functions.php:209
 msgid "links"
 msgstr "liens"
 
-#: inc/settings/freesiaempire-common-functions.php:211
+#: inc/settings/acyaempire-common-functions.php:211
 msgid "Chats"
 msgstr "Chats"
 
-#: inc/settings/freesiaempire-common-functions.php:217
+#: inc/settings/acyaempire-common-functions.php:217
 msgid "Archives"
 msgstr "Archives"
 
-#: inc/settings/freesiaempire-common-functions.php:222
+#: inc/settings/acyaempire-common-functions.php:222
 msgid "Page NOT Found"
 msgstr "Page introuvable."
 
-#: inc/settings/freesiaempire-common-functions.php:224
+#: inc/settings/acyaempire-common-functions.php:224
 msgid "Search Results"
 msgstr "Résultats de la recherche"
 
-#: inc/settings/freesiaempire-functions.php:113
+#: inc/settings/acyaempire-functions.php:113
 msgid "Upgrade to Pro"
 msgstr "Passer à la version Pro"
 
@@ -1329,36 +1329,36 @@ msgid "All plugins installed and activated successfully. %s"
 msgstr "Toutes les extensions ont été installées et activées avec succès. %s"
 
 #. Theme Name of the plugin/theme
-msgid "Freesia Empire"
-msgstr "Freesia Empire"
+msgid "ACYA Empire"
+msgstr "ACYA Empire"
 
 #. Theme URI of the plugin/theme
-msgid "http://themefreesia.com/themes/freesia-empire"
-msgstr "http://themefreesia.com/themes/freesia-empire"
+msgid "http://themeacya.com/themes/acya-empire"
+msgstr "http://themeacya.com/themes/acya-empire"
 
 #. Description of the plugin/theme
 msgid ""
-"Freesia Empire is a Responsive Multi-Purpose WordPress Theme, Designed & "
-"Developed by Theme Freesia. This theme supports popular plugins like "
+"ACYA Empire is a Responsive Multi-Purpose WordPress Theme, Designed & "
+"Developed by Theme ACYA. This theme supports popular plugins like "
 "Breadcrumb NavXT, WP-PageNavi, Contact Form 7, Jetpack by WordPress.com, "
 "Polylang, Newsletter, bbPress and WooCommerce. It is also translation ready "
 "and easily customizable with lots of theme options using Customizer. It "
-"consists contact-template, gallery-template, freesiaempire-corporate "
+"consists contact-template, gallery-template, acyaempire-corporate "
 "template and with lots of widgets and sidebar. Get free support at http://"
-"themefreesia.com/support-forum/ and View demo site at http://demo."
-"themefreesia.com/freesia-empire."
+"themeacya.com/support-forum/ and View demo site at http://demo."
+"themeacya.com/acya-empire."
 msgstr ""
-"Freesia Empire est un Thème WordPress Responsive et polyvalent, Conçu et "
-"développé par Thème Freesia . Ce thème prend en charge les plugins "
+"ACYA Empire est un Thème WordPress Responsive et polyvalent, Conçu et "
+"développé par Thème ACYA . Ce thème prend en charge les plugins "
 "populaires comme : Breadcrumb NavXT, WP-PageNavi, Contact Form 7, Jetpack de "
 "WordPress.com, Polylang, Newsletter, bbPress and WooCommerce. Il est "
 "également prêt à traduire et facilement personnalisable avec beaucoup "
 "d'options de thème en utilisant Customizer. Il se compose de contact-"
-"template, gallery-template, freesiaempire-corporate template et avec de "
+"template, gallery-template, acyaempire-corporate template et avec de "
 "nombreux widgets et sidebar. Obtenez un support gratuit sur http://"
-"themefreesia.com/support-forum/ et venez voir le site de démonstration sur "
-"http://demo.themefreesia.com/freesia-empire."
+"themeacya.com/support-forum/ et venez voir le site de démonstration sur "
+"http://demo.themeacya.com/acya-empire."
 
 #. Author URI of the plugin/theme
-msgid "http://themefreesia.com"
-msgstr "http://themefreesia.com"
+msgid "http://themeacya.com"
+msgstr "http://themeacya.com"

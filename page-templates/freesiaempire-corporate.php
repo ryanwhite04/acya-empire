@@ -4,43 +4,43 @@
  *
  * Displays Corporate template.
  *
- * @package Theme Freesia
- * @subpackage Freesia Empire
- * @since Freesia Empire 1.0.5
+ * @package Theme ACYA
+ * @subpackage ACYA Empire
+ * @since ACYA Empire 1.0.5
  */
 get_header();
-$freesiaempire_settings = freesiaempire_get_theme_options();
+$acyaempire_settings = acyaempire_get_theme_options();
 	echo '<div id="main">';
-	if($freesiaempire_settings['freesiaempire_disable_features'] != 1){
+	if($acyaempire_settings['acyaempire_disable_features'] != 1){
 		echo '<!-- Our Feature ============================================= -->';
-		$freesiaempire_features = '';
-		$freesiaempire_total_page_no = 0; 
-		$freesiaempire_list_page	= array();
-		for( $i = 1; $i <= $freesiaempire_settings['freesiaempire_total_features']; $i++ ){
-			if( isset ( $freesiaempire_settings['freesiaempire_frontpage_features_' . $i] ) && $freesiaempire_settings['freesiaempire_frontpage_features_' . $i] > 0 ){
-				$freesiaempire_total_page_no++;
+		$acyaempire_features = '';
+		$acyaempire_total_page_no = 0; 
+		$acyaempire_list_page	= array();
+		for( $i = 1; $i <= $acyaempire_settings['acyaempire_total_features']; $i++ ){
+			if( isset ( $acyaempire_settings['acyaempire_frontpage_features_' . $i] ) && $acyaempire_settings['acyaempire_frontpage_features_' . $i] > 0 ){
+				$acyaempire_total_page_no++;
 
-				$freesiaempire_list_page	=	array_merge( $freesiaempire_list_page, array( $freesiaempire_settings['freesiaempire_frontpage_features_' . $i] ) );
+				$acyaempire_list_page	=	array_merge( $acyaempire_list_page, array( $acyaempire_settings['acyaempire_frontpage_features_' . $i] ) );
 			}
 
 		}
-		if (( !empty( $freesiaempire_list_page ) || !empty($freesiaempire_settings['freesiaempire_features_title']) || !empty($freesiaempire_settings['freesiaempire_features_description']) )  && $freesiaempire_total_page_no > 0 ) {
-				$freesiaempire_features 	.= '<section class="our_feature">
+		if (( !empty( $acyaempire_list_page ) || !empty($acyaempire_settings['acyaempire_features_title']) || !empty($acyaempire_settings['acyaempire_features_description']) )  && $acyaempire_total_page_no > 0 ) {
+				$acyaempire_features 	.= '<section class="our_feature">
 						<div class="container clearfix">
 							<div class="container_container">';
 								$get_featured_posts 		= new WP_Query(array(
-								'posts_per_page'      	=> $freesiaempire_settings['freesiaempire_total_features'],
+								'posts_per_page'      	=> $acyaempire_settings['acyaempire_total_features'],
 								'post_type'           	=> array('page'),
-								'post__in'            	=> $freesiaempire_list_page,
+								'post__in'            	=> $acyaempire_list_page,
 								'orderby'             	=> 'post__in',
 							));
-				if($freesiaempire_settings['freesiaempire_features_title'] != ''){
-					$freesiaempire_features .= '<h2 class="freesia-animation fadeInUp">'. esc_attr($freesiaempire_settings['freesiaempire_features_title']).'</h2>';
+				if($acyaempire_settings['acyaempire_features_title'] != ''){
+					$acyaempire_features .= '<h2 class="acya-animation fadeInUp">'. esc_attr($acyaempire_settings['acyaempire_features_title']).'</h2>';
 				}
-				if($freesiaempire_settings['freesiaempire_features_description'] != ''){
-					$freesiaempire_features .= '<p class="feature-sub-title freesia-animation fadeInUp">'. esc_attr($freesiaempire_settings['freesiaempire_features_description']).'</p>';
+				if($acyaempire_settings['acyaempire_features_description'] != ''){
+					$acyaempire_features .= '<p class="feature-sub-title acya-animation fadeInUp">'. esc_attr($acyaempire_settings['acyaempire_features_description']).'</p>';
 				}
-					$freesiaempire_features .= '<div class="column clearfix">';
+					$acyaempire_features .= '<div class="column clearfix">';
 				$j = 1;
 				while ($get_featured_posts->have_posts()):$get_featured_posts->the_post();
 				$attachment_id = get_post_thumbnail_id();
@@ -56,45 +56,45 @@ $freesiaempire_settings = freesiaempire_get_theme_options();
 					else {
 						$delay_value = "0.3s";
 					}
-					$freesiaempire_features .= '<div class="three-column freesia-animation fadeInLeft" data-wow-delay="'.$delay_value .'">
+					$acyaempire_features .= '<div class="three-column acya-animation fadeInLeft" data-wow-delay="'.$delay_value .'">
 					<div class="feature-content">';
 					if ($image_attributes) {
-						$freesiaempire_features 	.= '<a class="feature-icon" href="'.get_permalink().'" title="'.the_title('', '', false).'"' .' alt="'.get_permalink().'">'.get_the_post_thumbnail($post->ID, 'thumbnail').'</a>';
+						$acyaempire_features 	.= '<a class="feature-icon" href="'.get_permalink().'" title="'.the_title('', '', false).'"' .' alt="'.get_permalink().'">'.get_the_post_thumbnail($post->ID, 'thumbnail').'</a>';
 					}
-					$freesiaempire_features 	.= '<article>';
+					$acyaempire_features 	.= '<article>';
 					if ($title_attribute != '') {
-								$freesiaempire_features .= '<h3 class="feature-title"><a href="'.get_permalink().'" title="'.the_title('', '', false).'" rel="bookmark">'.get_the_title().'</a></h3>';
+								$acyaempire_features .= '<h3 class="feature-title"><a href="'.get_permalink().'" title="'.the_title('', '', false).'" rel="bookmark">'.get_the_title().'</a></h3>';
 					}
 					if ($excerpt != '') {
-						$excerpt_text = $freesiaempire_settings['freesiaempire_tag_text'];
+						$excerpt_text = $acyaempire_settings['acyaempire_tag_text'];
 						$excerpt_length = substr(get_the_excerpt(), 0 , 85);
-						$freesiaempire_features .= '<p>'.$excerpt_length.' </p>';
+						$acyaempire_features .= '<p>'.$excerpt_length.' </p>';
 					}
-					$freesiaempire_features 	.= '</article>';
+					$acyaempire_features 	.= '</article>';
 					$excerpt = get_the_excerpt();
 					$content = get_the_content();
 					if(strlen($excerpt) < strlen($content)){
-						$excerpt_text = $freesiaempire_settings['freesiaempire_tag_text'];
+						$excerpt_text = $acyaempire_settings['acyaempire_tag_text'];
 						if($excerpt_text == '' || $excerpt_text == 'Read More') :
-							$freesiaempire_features 	.= '<a title='.'"'.get_the_title(). '"'. ' '.'href="'.get_permalink().'"'.' class="more-link">'.__('Read More', 'freesia-empire').'</a>';
+							$acyaempire_features 	.= '<a title='.'"'.get_the_title(). '"'. ' '.'href="'.get_permalink().'"'.' class="more-link">'.__('Read More', 'acya-empire').'</a>';
 						else:
-						$freesiaempire_features 	.= '<a title='.'"'.get_the_title(). '"'. ' '.'href="'.get_permalink().'"'.' class="more-link">'.$freesiaempire_settings[ 'freesiaempire_tag_text' ].'</a>';
+						$acyaempire_features 	.= '<a title='.'"'.get_the_title(). '"'. ' '.'href="'.get_permalink().'"'.' class="more-link">'.$acyaempire_settings[ 'acyaempire_tag_text' ].'</a>';
 						endif;
 					}
-					$freesiaempire_features 	.='</div> <!-- end .feature-content -->
+					$acyaempire_features 	.='</div> <!-- end .feature-content -->
 					</div><!-- end .three-column -->';
 					$j++;
 					endwhile;
-					$freesiaempire_features 	.='</div><!-- .end column-->';
-					$freesiaempire_features 	.='</div><!-- end .container_container -->';
-					$freesiaempire_features 	.='</div><!-- .container -->
+					$acyaempire_features 	.='</div><!-- .end column-->';
+					$acyaempire_features 	.='</div><!-- end .container_container -->';
+					$acyaempire_features 	.='</div><!-- .container -->
 					</section><!-- end .our_feature -->';
 				}
-		echo $freesiaempire_features;
+		echo $acyaempire_features;
 	}
 		wp_reset_postdata();
-   if( is_active_sidebar( 'freesiaempire_corporate_page_sidebar' ) ) {
-			dynamic_sidebar( 'freesiaempire_corporate_page_sidebar' );
+   if( is_active_sidebar( 'acyaempire_corporate_page_sidebar' ) ) {
+			dynamic_sidebar( 'acyaempire_corporate_page_sidebar' );
 	} ?>
 </div>
 <!-- end #main -->

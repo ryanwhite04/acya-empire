@@ -2,18 +2,18 @@
 /**
  * Theme Customizer Functions
  *
- * @package Theme Freesia
- * @subpackage Freesia Empire
- * @since Freesia Empire 1.0
+ * @package Theme ACYA
+ * @subpackage ACYA Empire
+ * @since ACYA Empire 1.0
  */
 /********************* FREESIAEMPIRE CUSTOMIZER SANITIZE FUNCTIONS *******************************/
-function freesiaempire_customize_preview_js() {
-	wp_enqueue_script( 'freesiaempire_customizer', get_template_directory_uri() . '/js/customize-preview.js', array( 'customize-preview' ), '20130508', true );
+function acyaempire_customize_preview_js() {
+	wp_enqueue_script( 'acyaempire_customizer', get_template_directory_uri() . '/js/customize-preview.js', array( 'customize-preview' ), '20130508', true );
 }
-function freesiaempire_checkbox_integer( $input ) {
+function acyaempire_checkbox_integer( $input ) {
 	return ( ( isset( $input ) && true == $input ) ? true : false );
 }
-function freesiaempire_sanitize_select( $input, $setting ) {
+function acyaempire_sanitize_select( $input, $setting ) {
 	
 	// Ensure input is a slug.
 	$input = sanitize_key( $input );
@@ -25,12 +25,12 @@ function freesiaempire_sanitize_select( $input, $setting ) {
 	return ( array_key_exists( $input, $choices ) ? $input : $setting->default );
 
 }
-function freesiaempire_numeric_value( $input ) {
+function acyaempire_numeric_value( $input ) {
 	if(is_numeric($input)){
 	return $input;
 	}
 }
-function freesiaempire_sanitize_custom_css( $input ) {
+function acyaempire_sanitize_custom_css( $input ) {
 	if ( $input != '' ) { 
 		$input = str_replace( '<=', '&lt;=', $input ); 
 		$input = wp_kses_split( $input, array(), array() ); 
@@ -42,15 +42,15 @@ function freesiaempire_sanitize_custom_css( $input ) {
 		return '';
 	}
 }
-function freesiaempire_reset_alls( $input ) {
+function acyaempire_reset_alls( $input ) {
 	if ( $input == 1 ) {
-		delete_option( 'freesiaempire_theme_options');
+		delete_option( 'acyaempire_theme_options');
 	} 
 	else {
 		return '';
 	}
 }
-function freesiaempire_sanitize_page( $input ) {
+function acyaempire_sanitize_page( $input ) {
 	if(  get_post( $input ) ){
 		return $input;
 	}

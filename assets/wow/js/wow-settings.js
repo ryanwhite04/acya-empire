@@ -1,5 +1,5 @@
 // For Wow Effect
   wow = new WOW({
-    boxClass: 'freesia-animation'
+    boxClass: 'acya-animation'
   });
   wow.init();

@@ -2,22 +2,22 @@
 /**
  * This template to displays woocommerce page
  *
- * @package Theme Freesia
- * @subpackage Freesia Empire
- * @since Freesia Empire 1.0
+ * @package Theme ACYA
+ * @subpackage ACYA Empire
+ * @since ACYA Empire 1.0
  */
 
 get_header();
-	$freesiaempire_settings = freesiaempire_get_theme_options();
-	global $freesiaempire_content_layout;
+	$acyaempire_settings = acyaempire_get_theme_options();
+	global $acyaempire_content_layout;
 	if( $post ) {
-		$layout = get_post_meta( $post->ID, 'freesiaempire_sidebarlayout', true );
+		$layout = get_post_meta( $post->ID, 'acyaempire_sidebarlayout', true );
 	}
 	if( empty( $layout ) || is_archive() || is_search() || is_home() ) {
 		$layout = 'default';
 	}
 	if( 'default' == $layout ) { //Settings from customizer
-		if(($freesiaempire_settings['freesiaempire_sidebar_layout_options'] != 'nosidebar') && ($freesiaempire_settings['freesiaempire_sidebar_layout_options'] != 'fullwidth')){ ?>
+		if(($acyaempire_settings['acyaempire_sidebar_layout_options'] != 'nosidebar') && ($acyaempire_settings['acyaempire_sidebar_layout_options'] != 'fullwidth')){ ?>
 
 <div id="primary">
 	<?php }
@@ -27,19 +27,19 @@ get_header();
 	</main> <!-- #main -->
 	<?php 
 	if( 'default' == $layout ) { //Settings from customizer
-		if(($freesiaempire_settings['freesiaempire_sidebar_layout_options'] != 'nosidebar') && ($freesiaempire_settings['freesiaempire_sidebar_layout_options'] != 'fullwidth')): ?>
+		if(($acyaempire_settings['acyaempire_sidebar_layout_options'] != 'nosidebar') && ($acyaempire_settings['acyaempire_sidebar_layout_options'] != 'fullwidth')): ?>
 </div> <!-- #primary -->
 <?php endif;
 }?>
 <?php 
 if( 'default' == $layout ) { //Settings from customizer
-	if(($freesiaempire_settings['freesiaempire_sidebar_layout_options'] != 'nosidebar') && ($freesiaempire_settings['freesiaempire_sidebar_layout_options'] != 'fullwidth')){ ?>
+	if(($acyaempire_settings['acyaempire_sidebar_layout_options'] != 'nosidebar') && ($acyaempire_settings['acyaempire_sidebar_layout_options'] != 'fullwidth')){ ?>
 <aside id="secondary">
 	<?php }
 } 
 	if( 'default' == $layout ) { //Settings from customizer
-		if(($freesiaempire_settings['freesiaempire_sidebar_layout_options'] != 'nosidebar') && ($freesiaempire_settings['freesiaempire_sidebar_layout_options'] != 'fullwidth')): ?>
-		<?php dynamic_sidebar( 'freesiaempire_woocommerce_sidebar' ); ?>
+		if(($acyaempire_settings['acyaempire_sidebar_layout_options'] != 'nosidebar') && ($acyaempire_settings['acyaempire_sidebar_layout_options'] != 'fullwidth')): ?>
+		<?php dynamic_sidebar( 'acyaempire_woocommerce_sidebar' ); ?>
 </aside> <!-- #secondary -->
 <?php endif;
 	}

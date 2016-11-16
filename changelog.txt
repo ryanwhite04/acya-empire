@@ -72,7 +72,7 @@
 	- Update - CSS Updated
 
 = 1.0.7 =
-	- Fix - prefixed with theme name for class Customize_Freesia_Empire_upgrade
+	- Fix - prefixed with theme name for class Customize_ACYA_Empire_upgrade
 	- Fix - Disable Buttom Social Icons issue fixed
 
 = 1.0.6 =

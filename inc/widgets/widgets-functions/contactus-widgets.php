@@ -1,16 +1,16 @@
 <?php
 /**
  *
- * @package Theme Freesia
- * @subpackage Freesia Empire
- * @since Freesia Empire 1.0
+ * @package Theme ACYA
+ * @subpackage ACYA Empire
+ * @since ACYA Empire 1.0
  */
 /******************** FREESIAEMPIRE INFO CONTACT US WIDGETS *****************************/
-class freesiaempire_contact_widgets extends WP_Widget {
+class acyaempire_contact_widgets extends WP_Widget {
 	function __construct() {
-		$widget_ops = array( 'classname' => 'widget_contact', 'description' => __( 'Display Contact Us Information', 'freesia-empire') );
+		$widget_ops = array( 'classname' => 'widget_contact', 'description' => __( 'Display Contact Us Information', 'acya-empire') );
 		$control_ops = array('width' => 200, 'height' => 250);
-		parent::__construct( false, $name=__('TF: Contact Us','freesia-empire'), $widget_ops, $control_ops );
+		parent::__construct( false, $name=__('TF: Contact Us','acya-empire'), $widget_ops, $control_ops );
 	}	
 	function form( $instance ) {
 		$instance = wp_parse_args( (array) $instance, array( 'title' => '','address1' => '','address_link1' => '','phone_no1' => '','phone_no2' => '', 'email_1' => '', 'skype_id1' => ''));
@@ -23,43 +23,43 @@ class freesiaempire_contact_widgets extends WP_Widget {
 		$skype_id1 = esc_attr($instance['skype_id1']); ?>
 		<p>
 			<label for="<?php echo $this->get_field_id('title'); ?>">
-				<?php _e('Contact Title:', 'freesia-empire'); ?>
+				<?php _e('Contact Title:', 'acya-empire'); ?>
 			</label>
 			<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php if(isset ( $instance['title'] ) ) echo strip_tags( $instance['title'] ); ?>" />
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id('address1'); ?>">
-				<?php _e('Address:', 'freesia-empire'); ?>
+				<?php _e('Address:', 'acya-empire'); ?>
 			</label>
 			<input class="widefat" id="<?php echo $this->get_field_id('address1'); ?>" name="<?php echo $this->get_field_name('address1'); ?>" type="text" value="<?php if(isset ( $instance['address1'] ) ) echo strip_tags( $instance['address1'] ); ?>" />
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id('address_link1'); ?>">
-				<?php _e('Address Link:', 'freesia-empire'); ?>
+				<?php _e('Address Link:', 'acya-empire'); ?>
 			</label>
 			<input class="widefat" id="<?php echo $this->get_field_id('address_link1'); ?>" name="<?php echo $this->get_field_name('address_link1'); ?>" type="text" value="<?php if(isset ( $instance['address_link1'] ) ) echo esc_url( $instance['address_link1'] ); ?>" />
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id('phone_no1'); ?>">
-				<?php _e('Phone No 1:', 'freesia-empire'); ?>
+				<?php _e('Phone No 1:', 'acya-empire'); ?>
 			</label>
 			<input class="widefat" id="<?php echo $this->get_field_id('phone_no1'); ?>" name="<?php echo $this->get_field_name('phone_no1'); ?>" type="text" value="<?php if(isset ( $instance['phone_no1'] ) ) echo esc_attr( $instance['phone_no1'] ); ?>" />
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id('phone_no2'); ?>">
-				<?php _e('Phone No 2:', 'freesia-empire'); ?>
+				<?php _e('Phone No 2:', 'acya-empire'); ?>
 			</label>
 			<input class="widefat" id="<?php echo $this->get_field_id('phone_no2'); ?>" name="<?php echo $this->get_field_name('phone_no2'); ?>" type="text" value="<?php if(isset ( $instance['phone_no2'] ) ) echo esc_attr( $instance['phone_no2'] ); ?>" />
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id('skype_id1'); ?>">
-				<?php _e('Skype ID:', 'freesia-empire'); ?>
+				<?php _e('Skype ID:', 'acya-empire'); ?>
 			</label>
 			<input class="widefat" id="<?php echo $this->get_field_id('skype_id1'); ?>" name="<?php echo $this->get_field_name('skype_id1'); ?>" type="text" value="<?php if(isset ( $instance['skype_id1'] ) ) echo esc_attr( $instance['skype_id1'] ); ?>" />
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id('email_1'); ?>">
-				<?php _e('Email ID:', 'freesia-empire'); ?>
+				<?php _e('Email ID:', 'acya-empire'); ?>
 			</label>
 			<input class="widefat" id="<?php echo $this->get_field_id('email_1'); ?>" name="<?php echo $this->get_field_name('email_1'); ?>" type="text" value="<?php if(isset ( $instance['email_1'] ) ) echo esc_attr( $instance['email_1'] ); ?>" />
 		</p>

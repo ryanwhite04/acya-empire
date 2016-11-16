@@ -4,22 +4,22 @@
  *
  * Displays the contact page template.
  *
- * @package Theme Freesia
- * @subpackage Freesia Empire
- * @since Freesia Empire 1.0
+ * @package Theme ACYA
+ * @subpackage ACYA Empire
+ * @since ACYA Empire 1.0
  */
 get_header();
-	global $freesiaempire_settings;
-	$freesiaempire_settings = wp_parse_args(  get_option( 'freesiaempire_theme_options', array() ),  freesiaempire_get_option_defaults_values() );
-	global $freesiaempire_content_layout;
+	global $acyaempire_settings;
+	$acyaempire_settings = wp_parse_args(  get_option( 'acyaempire_theme_options', array() ),  acyaempire_get_option_defaults_values() );
+	global $acyaempire_content_layout;
 	if( $post ) {
-		$layout = get_post_meta( $post->ID, 'freesiaempire_sidebarlayout', true );
+		$layout = get_post_meta( $post->ID, 'acyaempire_sidebarlayout', true );
 	}
 	if( empty( $layout ) || is_archive() || is_search() || is_home() ) {
 		$layout = 'default';
 	}
 	if( 'default' == $layout ) { //Settings from customizer
-		if(($freesiaempire_settings['freesiaempire_sidebar_layout_options'] != 'nosidebar') && ($freesiaempire_settings['freesiaempire_sidebar_layout_options'] != 'fullwidth')){ ?>
+		if(($acyaempire_settings['acyaempire_sidebar_layout_options'] != 'nosidebar') && ($acyaempire_settings['acyaempire_sidebar_layout_options'] != 'fullwidth')){ ?>
 
 <div id="primary">
 <?php }
@@ -40,19 +40,19 @@ get_header();
 		</div>
 	</div> <!-- end .googlemaps_widget -->
 	<?php endif;
-	if ( is_active_sidebar( 'freesiaempire_form_for_contact_page' ) ) :
-		dynamic_sidebar( 'freesiaempire_form_for_contact_page' );
+	if ( is_active_sidebar( 'acyaempire_form_for_contact_page' ) ) :
+		dynamic_sidebar( 'acyaempire_form_for_contact_page' );
 	endif; 
 	comments_template();
 		}
 	}
 	else { ?>
-	<h2 class="entry-title"> <?php _e( 'No Posts Found.', 'freesia-empire' ); ?> </h2>
+	<h2 class="entry-title"> <?php _e( 'No Posts Found.', 'acya-empire' ); ?> </h2>
 	<?php
 	} ?>
 	</div> <!-- end #main -->
 	<?php  if( 'default' == $layout ) { //Settings from customizer
-	if(($freesiaempire_settings['freesiaempire_sidebar_layout_options'] != 'nosidebar') && ($freesiaempire_settings['freesiaempire_sidebar_layout_options'] != 'fullwidth')): ?>
+	if(($acyaempire_settings['acyaempire_sidebar_layout_options'] != 'nosidebar') && ($acyaempire_settings['acyaempire_sidebar_layout_options'] != 'fullwidth')): ?>
 </div> <!-- #primary -->
 <?php endif;
 }else{ // for page/post
@@ -62,7 +62,7 @@ get_header();
 }?>
 <?php 
 if( 'default' == $layout ) { //Settings from customizer
-	if(($freesiaempire_settings['freesiaempire_sidebar_layout_options'] != 'nosidebar') && ($freesiaempire_settings['freesiaempire_sidebar_layout_options'] != 'fullwidth')){ ?>
+	if(($acyaempire_settings['acyaempire_sidebar_layout_options'] != 'nosidebar') && ($acyaempire_settings['acyaempire_sidebar_layout_options'] != 'fullwidth')){ ?>
 <aside id="secondary">
 <?php }
 }else{ // for page/ post
@@ -70,12 +70,12 @@ if( 'default' == $layout ) { //Settings from customizer
 <aside id="secondary">
 	<?php }
 	}
-	if ( is_active_sidebar( 'freesiaempire_contact_page_sidebar' ) ) :
-		dynamic_sidebar( 'freesiaempire_contact_page_sidebar' );
+	if ( is_active_sidebar( 'acyaempire_contact_page_sidebar' ) ) :
+		dynamic_sidebar( 'acyaempire_contact_page_sidebar' );
 	endif;?>
 	<?php 
 	if( 'default' == $layout ) { //Settings from customizer
-		if(($freesiaempire_settings['freesiaempire_sidebar_layout_options'] != 'nosidebar') && ($freesiaempire_settings['freesiaempire_sidebar_layout_options'] != 'fullwidth')): ?>
+		if(($acyaempire_settings['acyaempire_sidebar_layout_options'] != 'nosidebar') && ($acyaempire_settings['acyaempire_sidebar_layout_options'] != 'fullwidth')): ?>
 </aside> <!-- #secondary -->
 <?php endif;
 	}else{ // for page/post
