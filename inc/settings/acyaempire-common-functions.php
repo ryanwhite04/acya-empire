@@ -88,6 +88,7 @@ function acyaempire_layout_options() {
 	// Use nonce for verification
 	wp_nonce_field( basename( __FILE__ ), 'acyaempire_custom_meta_box_nonce' ); // for security purpose ?>
 	<?php
+		global $post;
 				foreach ($acyaempire_layout_options as $field) {
 					$acyaempire_layout_meta = get_post_meta( $post->ID, $field['id'], true );
 					if(empty( $acyaempire_layout_meta ) ){
