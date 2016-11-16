@@ -116,13 +116,16 @@ class freesiaempire_portfolio_widget extends WP_Widget {
 		<div class="four-column-full-width freesia-animation zoomIn">
 		<?php $page_title = get_the_title();
 				if (has_post_thumbnail()) { ?>
- <?php echo get_the_post_thumbnail($post->ID, 'post-thumbnails');
-				} ?>
+ 		<?php
+ 		// This was causing some trouble, why are they using post when it is undefined?
+ 		global $post;
+ 		echo get_the_post_thumbnail($post->ID, 'post-thumbnails');
+		} ?>
   <div class="portfolio-content">
     <h3><a href="<?php the_permalink();?>" title="<?php echo esc_attr($page_title); ?>"><?php echo esc_attr($page_title); ?></a></h3>
     <?php if(get_the_excerpt() != ''): ?>
     <p>
-      <?php 
+      <?php
 					if(strlen(get_the_excerpt()) >70){
 						$excerpt_length = substr(get_the_excerpt(), 0 , 70);
 						echo $excerpt_length .'...';
