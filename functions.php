@@ -7,6 +7,12 @@
  * @since ACYA Empire 1.0
  */
 
+
+// Increase the upload size
+ @ini_set( 'upload_max_size' , '64M' );
+ @ini_set( 'post_max_size', '64M');
+ @ini_set( 'max_execution_time', '300' );
+
 /************************************************************************************************/
 if ( ! function_exists( 'acyaempire_setup' ) ) :
 /**
@@ -200,7 +206,7 @@ function acyaempire_header_display(){
 			<a href="<?php echo esc_url(home_url('/'));?>" title="<?php echo esc_attr(get_bloginfo('name', 'display'));?>" rel="home"> <?php bloginfo('name');?> </a>
 		<?php if(is_home() || is_front_page() || is_search()){ ?>
 		</h1>  <!-- end .site-title -->
-		<?php } else { ?> </h2> <!-- end .site-title --> <?php } 
+		<?php } else { ?> </h2> <!-- end .site-title --> <?php }
 		$site_description = get_bloginfo( 'description', 'display' );
 		if($site_description){?>
 		<p id ="site-description"> <?php bloginfo('description');?> </p> <!-- end #site-description -->
